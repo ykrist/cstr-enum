@@ -9,7 +9,7 @@ keywords = ["ffi", "derive", "conversion", "string", "enum"]
 categories = ["development-tools::ffi"]
 
 [dependencies]
-cstr-enum-derive = { path = "./cstr-enum-derive"  }
+cstr-enum-derive = "0.1.0"
 
 [dev-dependencies]
 trybuild = "^1.0"
