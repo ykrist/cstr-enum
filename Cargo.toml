@@ -1,7 +1,7 @@
 [package]
 name = "cstr-enum"
 version = "1.0.0"
-authors = ["Yannik Rist"]
+authors = ["Yannik Rist <yannik.rist@uqconnect.edu.au>"]
 edition = "2018"
 description = "A crate for defining C-style string enums."
 license = "MIT"

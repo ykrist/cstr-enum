@@ -1,7 +1,7 @@
 [package]
 name = "cstr-enum-derive"
 version = "0.1.0"
-authors = ["Yannik Rist"]
+authors = ["Yannik Rist <yannik.rist@uqconnect.edu.au>"]
 edition = "2018"
 license = "MIT"
 description = "Derive macros for the cstr-enum crate"
