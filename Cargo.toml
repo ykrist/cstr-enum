@@ -1,10 +1,12 @@
 [package]
 name = "cstr-enum"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Yannik Rist"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "A crate for defining C-style string enums."
+license = "MIT"
+keywords = ["ffi", "derive", "conversion", "string", "enum"]
+categories = ["development-tools::ffi"]
 
 [dependencies]
 cstr-enum-derive = { path = "./cstr-enum-derive"  }
