@@ -1,4 +1,4 @@
-# cstr-enum ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/ykrist/cstr-enum?sort=semver)
+# cstr-enum ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/ykrist/cstr-enum?sort=semver) ![](https://img.shields.io/crates/v/cstr-enum.svg) 
 
 A crate for defining C-style string enums.
 
@@ -35,5 +35,7 @@ assert_eq!(
 );
 ```
 
+For more information on usage, see the documentation on [docs.rs](https://docs.rs/cstr-enum/)
+
 ## License
-Licensed under [`MIT`](LICENSE.txt).
+Licensed under [MIT](LICENSE.txt).
