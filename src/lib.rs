@@ -12,7 +12,6 @@
 //! ```
 //! use cstr_enum::*;
 //! use std::ffi::CStr;
-//! use std::os::raw::c_char;
 //!
 //! #[derive(Debug, Eq, PartialEq, FromCStr, AsCStr)]
 //! enum Constants {
@@ -35,7 +34,6 @@
 //! Both derive macros allow the re-naming of enum variants using the `cstr(name="string literal")` attribute on enum variants.
 //! ```
 //! # use cstr_enum::*;
-//! #
 //! #[derive(Debug, Eq, PartialEq, FromCStr, AsCStr)]
 //! enum Constants {
 //!   #[cstr(name="pork")]
@@ -95,14 +93,14 @@ use std::ffi::CStr;
 ///
 /// If using the derive macro, this will be a cheap conversion.
 pub trait AsCStr {
-  /// Represent self as a [`&CStr`](std::ffi::CStr)
+  /// Represent self as a [`&CStr`](std::ffi::CStr).
   fn as_cstr(&self) -> &CStr;
 }
 
 /// Conversion from a C-style string
 ///
 /// This trait should be used the same way as [`std::str::FromStr`], although
-/// a separate `.parse()` implementation is not provided `&str`
+/// analogous `.parse()` method is not provided `&CStr`
 pub trait FromCStr {
   /// The error type returned if parsing fails.
   ///

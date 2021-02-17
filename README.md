@@ -14,7 +14,6 @@ by the derive macros perform no allocations, using only static `[u8]` buffers.
 ```rust
 use cstr_enum::*;
 use std::ffi::CStr;
-use std::os::raw::c_char;
 
 #[derive(Debug, Eq, PartialEq, FromCStr, AsCStr)]
 enum Constants {
